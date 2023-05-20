@@ -1,0 +1,17 @@
+-
+    let item = [
+        {name: "головна", url: "#"},
+        {name: "послуги", url: "#"},
+        {name: "про компанію", url: "#"},
+        {name: "акції", url: "#"},
+        {name: "партнери", url: "#"},
+        {name: "відгуки", url: "#"},
+        {name: "контакти", url: "#"}
+    ]
+
+mixin top-menu (items)
+    h2 trips
+    ul 
+        for item in items 
+            li 
+                a(href="item.url") #{item.name}
